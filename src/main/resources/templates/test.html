@@ -1,6 +1,10 @@
-<html>
+<html xmlns:th="https://www.thymeleaf.org">
 	<head></head>
 	<body>
-		Hello
+		<table>
+			<tr th:each="d: ${data}">
+				<td th:text="${d.name}"></td>
+			</tr>
+		</table>
 	</body>
 </html>
